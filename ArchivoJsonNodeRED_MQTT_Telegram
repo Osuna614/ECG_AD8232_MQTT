@@ -1,0 +1,729 @@
+[
+    {
+        "id": "f7eeac4492db0c91",
+        "type": "tab",
+        "label": "ECG_Monitor",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "255b64947ca5b2b4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "16b9fbdec2a50a4e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5f30a2205652b055",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e7f3b683.f4e298",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ba0c4d772b5d090e",
+        "type": "ui_group",
+        "name": "Calendario",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": true
+    },
+    {
+        "id": "f92c8594466e8603",
+        "type": "ui_group",
+        "name": "Programación semanal",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "63f34a35352f1bd4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.20.10.10",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "32e59906970725b1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "brokerID",
+        "type": "mqtt-broker",
+        "name": "EMQX Broker",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "bd1d6808109dbf91",
+        "type": "ui_group",
+        "name": "Reloj",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "641a9f0d91a665ee",
+        "type": "ui_group",
+        "name": "Controles",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "37ac129c189bbbbd",
+        "type": "ui_group",
+        "name": "ECG",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81b3e7235e85f581",
+        "type": "ui_group",
+        "name": "Tópicos",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "6bef22c156e20fa0",
+        "type": "ui_group",
+        "name": "Subtópicos",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "67b56c76e6f9ef73",
+        "type": "ui_group",
+        "name": "Parámetros",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "54cc4d062d9ee0cd",
+        "type": "ui_group",
+        "name": "SwitchActivación",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "401a896ce380c43a",
+        "type": "ui_group",
+        "name": "PZEM004T Data",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9d7b7a1e6cea07f3",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d2c5bf937664544d",
+        "type": "ui_group",
+        "name": "ECG",
+        "tab": "7606f2526df054fd",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7606f2526df054fd",
+        "type": "ui_tab",
+        "name": "DETECCIÓN Y MONITOREO DE ANOMALÍAS CARDÍACAS",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "58e561dab4516b44",
+        "type": "ui_group",
+        "name": "Datos",
+        "tab": "7606f2526df054fd",
+        "order": 2,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9739a7bd86de2333",
+        "type": "telegram bot",
+        "botname": "AleAno_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "2f6992398e2f23a5",
+        "type": "mqtt in",
+        "z": "f7eeac4492db0c91",
+        "name": "Anomaly Detection",
+        "topic": "/anomaly",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "brokerID",
+        "inputs": 0,
+        "x": 530,
+        "y": 200,
+        "wires": [
+            [
+                "aa209f04ae5e893d"
+            ]
+        ]
+    },
+    {
+        "id": "aa209f04ae5e893d",
+        "type": "ui_text",
+        "z": "f7eeac4492db0c91",
+        "group": "58e561dab4516b44",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Anomaly Status",
+        "label": "Estado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a308174f05f4c931",
+        "type": "mqtt in",
+        "z": "f7eeac4492db0c91",
+        "name": "ECG Data",
+        "topic": "/ecg_data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "brokerID",
+        "inputs": 0,
+        "x": 80,
+        "y": 40,
+        "wires": [
+            [
+                "2c583dca81711b20"
+            ]
+        ]
+    },
+    {
+        "id": "2c583dca81711b20",
+        "type": "ui_chart",
+        "z": "f7eeac4492db0c91",
+        "name": "",
+        "group": "d2c5bf937664544d",
+        "order": 1,
+        "width": 16,
+        "height": 11,
+        "label": "ECG (mV vs Tiempo)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 290,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b36ee7c5cd15163",
+        "type": "mqtt in",
+        "z": "f7eeac4492db0c91",
+        "name": "Heart Rate",
+        "topic": "/hr",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "brokerID",
+        "inputs": 0,
+        "x": 500,
+        "y": 40,
+        "wires": [
+            [
+                "3df73b5526782e2c"
+            ]
+        ]
+    },
+    {
+        "id": "3df73b5526782e2c",
+        "type": "ui_gauge",
+        "z": "f7eeac4492db0c91",
+        "name": "",
+        "group": "58e561dab4516b44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Ritmo Cardiaco (BPM)",
+        "label": "BPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 200,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a46fedcef3a53f49",
+        "type": "mqtt in",
+        "z": "f7eeac4492db0c91",
+        "name": "Rhythm",
+        "topic": "/ritmo",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "brokerID",
+        "inputs": 0,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "72145379d102013d"
+            ]
+        ]
+    },
+    {
+        "id": "72145379d102013d",
+        "type": "ui_text",
+        "z": "f7eeac4492db0c91",
+        "group": "58e561dab4516b44",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ritmo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 680,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1480228ddbaccce6",
+        "type": "telegram sender",
+        "z": "f7eeac4492db0c91",
+        "name": "",
+        "bot": "9739a7bd86de2333",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65aebc240271d26d",
+        "type": "function",
+        "z": "f7eeac4492db0c91",
+        "name": "function 1",
+        "func": "msg.payload={\n    \"chatId\": -4245951934,\n    \"type\":\"message\",\n    \"content\":\"El paciente NN presentó una anomalía respiratoria\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "1480228ddbaccce6"
+            ]
+        ]
+    },
+    {
+        "id": "830f585024f1749b",
+        "type": "inject",
+        "z": "f7eeac4492db0c91",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "65aebc240271d26d"
+            ]
+        ]
+    }
+]
